@@ -26,6 +26,10 @@ def predict_home_price():
 
     return response
 
+@app.route('/')
+def home():
+    return "House Price Prediction API is running!"
+
 import os
 
 if __name__ == "__main__":
