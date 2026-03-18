@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>House Price Predictor</title>
+</head>
+<body>
+
+<h2>House Price Prediction</h2>
+
+<form action="/predict_home_price" method="post">
+    <label>Location:</label><br>
+    <input type="text" name="location"><br><br>
+
+    <label>Area (sqft):</label><br>
+    <input type="text" name="total_sqft"><br><br>
+
+    <label>BHK:</label><br>
+    <input type="text" name="bhk"><br><br>
+
+    <label>Bath:</label><br>
+    <input type="text" name="bath"><br><br>
+
+    <button type="submit">Predict</button>
+</form>
+
+</body>
+</html>

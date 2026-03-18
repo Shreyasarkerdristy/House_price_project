@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask import render_template
 import util
 
 app = Flask(__name__)
@@ -29,7 +30,7 @@ def predict_home_price():
 
 @app.route('/')
 def home():
-    return "House Price Prediction API is running!"
+    return render_template("index.html")
 
 import os
 
